@@ -1,16 +1,16 @@
 ﻿namespace AdmirLive.CSharpPolymorphism.Example;
 
 /// <summary>
-///     Example of polymorphism in C# using abstract classes on Tesla Electric Cars
+///     Example of using the interface ICar for the class TeslaModelSCar.
 /// </summary>
-public sealed class TeslaModelSCar : Car
+public sealed class TeslaModelSCar : ICar
 {
-    public override void StartEngine()
+    public void StartEngine()
     {
         Console.WriteLine(value: "The electric motor in the Tesla Model S car was activated...");
     }
 
-    public override void StopEngine()
+    public void StopEngine()
     {
         Console.WriteLine(value: "The electric motor in the Tesla Model S car was deactivated...");
     }
