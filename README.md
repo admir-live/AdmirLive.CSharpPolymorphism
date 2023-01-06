@@ -7,5 +7,23 @@ In some ways, polymorphism could be constructive for reusing code and keeping th
 
 Consider a base class called Car with a method called StartEngine() that tells the engine how to start. Suppose you have derived classes like MercedesBenzCar and TeslaModelSCar. In that case, you might be able to use polymorphism to define the StartEngine() method in the base Car class and then override that method in the derived classes to provide the specific implementation for each type of Car. Nonetheless,  this can get you into trouble. Let’s review some code.
 
+```csharp
+/// <summary>
+///     Base class for car objects
+/// </summary>
+public abstract class Car
+{
+    public virtual void StartEngine()
+    {
+        Console.WriteLine(value: "Car engine has been started.");
+    }
+
+    public virtual void StopEngine()
+    {
+        Console.WriteLine(value: "Car engine has been stopped.");
+    }
+}
+```
+
 If you like read full post check this out this [link]().
 
