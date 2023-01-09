@@ -3,7 +3,7 @@
 /// <summary>
 ///     Example of using the interface ICar for the class MercedesBenzCar.
 /// </summary>
-public class MercedesBenzCar : ICar
+public sealed class MercedesBenzCar : ICar
 {
     public void StartEngine()
     {
